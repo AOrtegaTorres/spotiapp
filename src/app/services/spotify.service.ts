@@ -39,4 +39,11 @@ export class SpotifyService {
     return this.getQuery(`artists/${id}`);
   }
 
+  getTopTracks(id: string){
+    return this.getQuery(`artists/${id}/top-tracks?country=us`).pipe( map((data) =>{
+      return data['tracks'];
+      })
+    );
+  }
+
 }
