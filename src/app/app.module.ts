@@ -11,7 +11,11 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 
 /*Request HTTP*/
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { NoimagesPipe } from './pipes/noimages.pipe';
+import { CardComponent } from './components/card/card.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { ArtistaComponent } from './components/artista/artista.component'
 /*
 pedido.
 client_ID: d6b55734aa3f4b49af89ae8023b6c69e
@@ -23,7 +27,11 @@ client_secret: 4659ca881ead4eed81c45197f071db34
     AppComponent,
     HomeComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagesPipe,
+    CardComponent,
+    LoadingComponent,
+    ArtistaComponent
   ],
   imports: [
     BrowserModule,
